@@ -1,0 +1,53 @@
+body {
+    background-color: #050B14;
+    color: #e2e8f0;
+}
+
+/* Efecto de Ruido de Fondo */
+.noise-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Utilidades Glassmorphism */
+.glass {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(51, 65, 85, 0.5);
+}
+
+/* Animación 3D para el Mockup del Dashboard */
+.perspective-container {
+    perspective: 1000px;
+}
+
+.hero-mockup {
+    transform: rotateX(5deg) rotateY(-5deg) rotateZ(1deg);
+    box-shadow: -20px 20px 60px rgba(6, 182, 212, 0.15);
+    transition: transform 0.5s ease;
+}
+
+.hero-mockup:hover {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1.02);
+}
+
+/* Gradientes de Texto */
+.text-gradient {
+    background: linear-gradient(to right, #ffffff, #94a3b8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cyan {
+    background: linear-gradient(to right, #06B6D4, #3b82f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
